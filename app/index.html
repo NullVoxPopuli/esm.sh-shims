@@ -43,6 +43,7 @@
     "@ember/service": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/service/index.js?&dev",
     "@ember/runloop": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/runloop/index.js?&dev",
     "@ember/template": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/template/index.js?&dev",
+    "_@ember/template-compilation": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/template-compilation/index.js?&dev",
     "@ember/template-compilation": "./node_modules/esm.sh-shims/packages/@ember/template-compilation.js?&dev",
     "__@ember/template-compilation": "https://esm.sh/gh/NullVoxPopuli/esm.sh-shims/packages/@ember/template-compilation.js?&dev",
     "@ember/template-factory": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/template-factory/index.js?&dev",
@@ -88,14 +89,21 @@
     "@glimmer/validator": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/validator.js?&dev",
     "@glimmer/vm": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/vm.js?&dev",
     "@glimmer/wire-format": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/wire-format.js?&dev",
-    "@glimmer/syntax": "https://esm.sh/*@glimmer/syntax?&dev",
-    "@glimmer/component": "https://esm.sh/*@glimmer/component?&dev",
-    "@glimmer/application": "https://esm.sh/*@glimmer/application?&dev",
-    "@glimmer/di": "https://esm.sh/*@glimmer/di?&dev",
-    "@glimmer/compiler": "https://esm.sh/*@glimmer/compiler?&dev",
     "@glimmer/tracking": "https://esm.sh/*ember-source@5.9.0/dist/packages/@glimmer/tracking/index.js?&dev",
     "@glimmer/tracking/": "https://esm.sh/*ember-source@5.9.0/dist/packages/@glimmer/tracking/",
-    "@glimmer/debug": "https://esm.sh/*@glimmer/debug?&dev",
+    "@glimmer/debug": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/debug.js?&dev",
+
+    "@glimmer/di": "https://esm.sh/*@glimmer/di?&dev",
+    "@glimmer/compiler": "https://esm.sh/*@glimmer/compiler?&dev",
+    "@glimmer/application": "https://esm.sh/*@glimmer/application?&dev",
+    "@glimmer/component": "https://esm.sh/*@glimmer/component?&dev",
+
+    "@glimmer/syntax": "https://esm.sh/*@glimmer/syntax?&dev",
+    "_@glimmer/component": "https://esm.sh/*@glimmer/component?&dev",
+    "_@glimmer/application": "https://esm.sh/*@glimmer/application?&dev",
+    "_@glimmer/di": "https://esm.sh/*@glimmer/di?&dev",
+    "_@glimmer/compiler": "https://esm.sh/*@glimmer/compiler?&dev",
+    "_@glimmer/debug": "https://esm.sh/*@glimmer/debug?&dev",
 
     "@ember/string": "https://esm.sh/*@ember/string/addon/index.js?&dev",
     "ember-resolver": "https://esm.sh/*ember-resolver/addon/index.js?&dev",
@@ -139,6 +147,7 @@
 }
 </script>
   <script type="module">
+    import 'ember-template-compiler';
     import EmberApplication from '@ember/application';
     import Resolver from 'ember-resolver';
     import EmberRouter from '@embroider/router';
