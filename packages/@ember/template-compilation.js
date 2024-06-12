@@ -1,7 +1,7 @@
 export * from "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/template-compilation/index.js?&dev";
 import emberTemplateCompiler from "https://esm.sh/*ember-source@5.9.0/dist/ember-template-compiler.js?dev";
 
-import { createTemplateFactory } from "@ember/template-factory";
+import { createTemplateFactory } from "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/template-factory/index.js?&dev";
 
 import { precompileJSON } from "@glimmer/compiler";
 import { getTemplateLocals } from "@glimmer/syntax";
