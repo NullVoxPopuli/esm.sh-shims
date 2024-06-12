@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script type="importmap">
+{
+  "imports": {
+    "require": "https://esm.sh/*requirejs",
+    "content-tag": "https://esm.sh/*content-tag",
+    "content-tag/": "https://esm.sh/*content-tag/",
+    "ember": "https://esm.sh/*ember-source@5.9.0/dist/packages/ember/index.js",
+    "ember-template-compiler": "https://esm.sh/*ember-source@5.9.0/dist/ember-template-compiler.js",
+    "ember/": "https://esm.sh/*ember-source@5.9.0/dist/packages/ember/",
+    "ember-testing": "https://esm.sh/*ember-source@5.9.0/dist/packages/ember-testing/index.js",
+    "@ember/array": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/array/index.js",
+    "@ember/array/": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/array/",
+    "@ember/application": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/application/index.js",
+    "@ember/application/": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/application/",
+    "@ember/canary-features": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/canary-features/index.js",
+    "@ember/component": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/component/index.js",
+    "@ember/component/": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/component/",
+    "@ember/controller": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/controller/index.js",
+    "@ember/debug": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/debug/index.js",
+    "@ember/debug/": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/debug/",
+    "@ember/deprecated-features": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/deprecated-features/index.js",
+    "@ember/destroyable": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/destroyable/index.js",
+    "@ember/engine": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/engine/index.js",
+    "@ember/engine/": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/engine/",
+    "@ember/enumerable": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/enumerable/index.js",
+    "@ember/enumerable/": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/enumerable/",
+    "@ember/helper": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/helper/index.js",
+    "@ember/instrumentation": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/instrumentation/index.js",
+    "@ember/modifier": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/modifier/index.js",
+    "@ember/object": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/object/index.js",
+    "@ember/object/": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/object/",
+    "@ember/owner": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/owner/index.js",
+    "@ember/renderer": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/renderer/index.js",
+    "@ember/routing": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/routing/index.js",
+    "@ember/routing/": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/routing/",
+    "@ember/service": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/service/index.js",
+    "@ember/runloop": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/runloop/index.js",
+    "@ember/template": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/template/index.js",
+    "@ember/template-compilation": "./node_modules/esm.sh-shims/packages/@ember/template-compilation.js",
+    "@ember/template-factory": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/template-factory/index.js",
+    "@ember/test": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/test/index.js",
+    "@ember/utils": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/utils/index.js",
+    "@ember/version": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/version/index.js",
+    "@ember/-internals/browser-environment": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/-internals/browser-environment/index.js",
+    "@ember/-internals/bootstrap": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/-internals/bootstrap/index.js",
+    "@ember/-internals/container": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/-internals/container/index.js",
+    "@ember/-internals/deprecations": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/-internals/deprecations/index.js",
+    "@ember/-internals/environment": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/-internals/environment/index.js",
+    "@ember/-internals/error-handling": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/-internals/error-handling/index.js",
+    "@ember/-internals/glimmer": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/-internals/glimmer/index.js",
+    "@ember/-internals/meta": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/-internals/meta/index.js",
+    "@ember/-internals/metal": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/-internals/metal/index.js",
+    "@ember/-internals/overrides": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/-internals/overrides/index.js",
+    "@ember/-internals/owner": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/-internals/owner/index.js",
+    "@ember/-internals/routing": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/-internals/routing/index.js",
+    "@ember/-internals/runtime": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/-internals/runtime/index.js",
+    "@ember/-internals/string": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/-internals/string/index.js",
+    "@ember/-internals/utility-types": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/-internals/utility-types/index.js",
+    "@ember/-internals/utils": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/-internals/utils/index.js",
+    "@ember/-internals/views": "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/-internals/views/index.js",
+    "backburner.js": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/backburner.js.js",
+    "dag-map": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/dag-map.js",
+    "route-recognizer": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/route-recognizer.js",
+    "router_js": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/router_js.js",
+    "rsvp": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/rsvp.js",
+    "@simple-dom/document": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@simple-dom/document.js",
+    "@glimmer/destroyable": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/destroyable.js",
+    "@glimmer/encoder": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/encoder.js",
+    "@glimmer/env": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/env.js",
+    "@glimmer/global-context": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/global-context.js",
+    "@glimmer/low-level": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/low-level.js",
+    "@glimmer/manager": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/manager.js",
+    "@glimmer/node": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/node.js",
+    "@glimmer/opcode-compiler": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/opcode-compiler.js",
+    "@glimmer/owner": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/owner.js",
+    "@glimmer/program": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/program.js",
+    "@glimmer/reference": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/reference.js",
+    "@glimmer/runtime": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/runtime.js",
+    "@glimmer/util": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/util.js",
+    "@glimmer/validator": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/validator.js",
+    "@glimmer/vm": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/vm.js",
+    "@glimmer/wire-format": "https://esm.sh/*ember-source@5.9.0/dist/dependencies/@glimmer/wire-format.js",
+    "@glimmer/syntax": "https://esm.sh/*@glimmer/syntax",
+    "@glimmer/component": "https://esm.sh/*@glimmer/component",
+    "@glimmer/application": "https://esm.sh/*@glimmer/application",
+    "@glimmer/di": "https://esm.sh/*@glimmer/di",
+    "@glimmer/compiler": "https://esm.sh/*@glimmer/compiler",
+    "@glimmer/tracking": "https://esm.sh/*ember-source@5.9.0/dist/packages/@glimmer/tracking/index.js",
+    "@glimmer/tracking/": "https://esm.sh/*ember-source@5.9.0/dist/packages/@glimmer/tracking/",
+    "@glimmer/debug": "https://esm.sh/*@glimmer/debug",
+
+    "@ember/string": "https://esm.sh/*@ember/string/addon/index.js",
+    "ember-resolver": "https://esm.sh/*ember-resolver/addon/index.js",
+    "@embroider/macros": "https://esm.sh/*@embroider/macros",
+    "@embroider/router": "https://esm.sh/*@embroider/router",
+    "@ember/test-waiters": "https://esm.sh/*@ember/test-waiters/addon/@ember/test-waiters/index.js",
+    "@handlebars/parser": "https://esm.sh/*@handlebars/parser",
+    "simple-html-tokenizer": "https://esm.sh/*simple-html-tokenizer",
+    "isobject": "https://esm.sh/*isobject",
+    "isarray": "https://esm.sh/*isarray",
+    "@jridgewell/sourcemap-codec": "https://esm.sh/*@jridgewell/sourcemap-codec",
+    
+    "ember-repl": "https://esm.sh/*ember-repl",
+    "ember-repl/": "https://esm.sh/*ember-repl/",
+    "ember-resources": "https://esm.sh/*ember-resources",
+    "change-case": "https://esm.sh/*change-case",
+    "camel-case": "https://esm.sh/*camel-case",
+    "capital-case": "https://esm.sh/*capital-case",
+    "constant-case": "https://esm.sh/*constant-case",
+    "dot-case": "https://esm.sh/*dot-case",
+    "header-case": "https://esm.sh/*header-case",
+    "no-case": "https://esm.sh/*no-case",
+    "param-case": "https://esm.sh/*param-case",
+    "pascal-case": "https://esm.sh/*pascal-case",
+    "path-case": "https://esm.sh/*path-case",
+    "sentence-case": "https://esm.sh/*sentence-case",
+    "snake-case": "https://esm.sh/*snake-case",
+    "upper-case-first": "https://esm.sh/*upper-case-first",
+    "upper-case": "https://esm.sh/*upper-case",
+    "lower-case": "https://esm.sh/*lower-case",
+    "uuid": "https://esm.sh/*uuid",
+    "babel-plugin-ember-template-compilation": "https://esm.sh/*babel-plugin-ember-template-compilation",
+    "babel-import-util": "https://esm.sh/*babel-import-util",
+    "line-column": "https://esm.sh/*line-column",
+    "magic-string": "https://esm.sh/*magic-string",
+    "tslib": "https://esm.sh/*tslib"
+
+    
+
+  }
+}
+</script>
+  <script type="module">
+    import EmberApplication from '@ember/application';
+    import Resolver from 'ember-resolver';
+    import EmberRouter from '@embroider/router';
+    // Not implemented yet
+    // https://github.com/emberjs/rfcs/blob/master/text/0931-template-compiler-api.md
+    //import { template } from "@ember/template-compiler/runtime";
+
+    import {compileTemplate} from '@ember/template-compilation';
+    //import { compile } from 'ember-repl';
+
+    function config(environment) {
+      const ENV = {
+        modulePrefix: 'js-bin-example',
+        environment,
+        rootElement: '#app',
+        autoboot: false,
+        rootURL: '/',
+        locationType: 'history',
+      };
+
+      return ENV;
+    }
+
+    const ENV = config('development');
+
+    class App extends EmberApplication {
+      rootElement = ENV.rootElement;
+      autoboot = ENV.autoboot;
+      modulePrefix = ENV.modulePrefix;
+      podModulePrefix = `${ENV.modulePrefix}/pods`;
+      Resolver = Resolver;
+    }
+
+
+    const app = Application.create({name: ENV.modulePrefix});
+
+    const registryObjects = {};
+
+    Object.keys(registryObjects).forEach((key) => {
+      const value = registryObjects[key];
+      app.register(key, value);
+    });
+
+    app.register('config:environment', ENV);
+    app.register('router:main', Router);
+    app.register('template:application', template('hi'));
+
+
+  </script>
+
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+
+</html>

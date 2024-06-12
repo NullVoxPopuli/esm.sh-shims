@@ -1,0 +1,18 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "author": "NullVoxPopuli",
+  "license": "GPL-3.0",
+  "scripts": {
+    "start": "pnpm serve"
+  },
+  "devDependencies": {
+    "serve": "^14.2.3",
+    "vite": "^5.2.13"
+  },
+  "dependencies": {
+    "esm.sh-shims": "link:.."
+  }
+}
