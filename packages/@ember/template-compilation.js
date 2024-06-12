@@ -1,4 +1,4 @@
-import { compileTemplate as compile } from "https://esm.sh/*ember-source@5.9.0/dist/packages/@ember/template-compilation/index.js";
+import * as emberTemplateCompiler from "https://esm.sh/*ember-source@5.9.0/dist/ember-template-compiler.js";
 
-export const compileTemplate = compile;
-export const precompileTemplate = compile;
+export const compileTemplate = emberTemplateCompiler.compile;
+export const precompileTemplate = emberTemplateCompiler.precompile;
